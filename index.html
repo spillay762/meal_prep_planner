@@ -6,27 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Meal Prep Planner</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>My Weekly Meal Prep Planner</h1>
+    <div class="container">
 
-    <p>Plan my lunches and dinners for the week.</p>
+        <h1>My Weekly Meal Prep Planner</h1>
 
-    <h2>Number of Servings</h2>
+        <p class="subtitle">
+            Plan your lunches and dinners for the week.
+        </p>
 
-    <input type="number" value="10" min="1">
+        <label for="servings">Number of Servings</label>
 
-    <h2>Lunch</h2>
+        <input
+            type="number"
+            id="servings"
+            value="12"
+            min="1"
+        >
 
-    <p>Lunch meal ideas will appear here.</p>
+        <div class="meal-card">
+            <h2>Lunch</h2>
 
-    <h2>Dinner</h2>
+            <p id="lunchMeal">
+                Lunch meal ideas will appear here.
+            </p>
+        </div>
 
-    <p>Dinner meal ideas will appear here.</p>
+        <div class="meal-card">
+            <h2>Dinner</h2>
 
-    <button>Generate My Meals</button>
+            <p id="dinnerMeal">
+                Dinner meal ideas will appear here.
+            </p>
+        </div>
+
+        <button id="generateButton">
+            Generate My Meals
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 

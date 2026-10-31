@@ -9,7 +9,7 @@
     <title>My Weekly Meal Prep Planner</title>
 
     <!-- Website favicon -->
-    <link rel="icon" type="image/png" href="spatula-logo.png">
+    <link rel="icon" type="image/png" href="spatula%20logo.png">
 
     <!-- Google Font: Dancing Script -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,26 +21,32 @@
         rel="stylesheet"
     >
 
-    <!-- Your CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 
 <body>
 
     <div class="container">
 
-        <!-- HEADER / LOGO + TITLE -->
+
+        <!-- =========================================
+             LOGO + WEBSITE TITLE
+        ========================================== -->
 
         <div class="brand-header">
 
             <img
-                src="spatula-logo.png"
+                src="spatula%20logo.png"
                 alt="Meal Prep Planner Logo"
                 class="brand-logo"
             >
 
-            <h1>My Weekly Meal Prep Planner</h1>
+            <h1>
+                My Weekly Meal Prep Planner
+            </h1>
 
         </div>
 
@@ -50,7 +56,10 @@
         </p>
 
 
-        <!-- SERVINGS -->
+
+        <!-- =========================================
+             SERVINGS
+        ========================================== -->
 
         <div class="servings-section">
 
@@ -67,8 +76,6 @@
             >
 
 
-            <!-- GENERATE BUTTON -->
-
             <button id="generateButton">
                 Generate My Meals
             </button>
@@ -76,15 +83,21 @@
         </div>
 
 
-        <!-- LUNCH -->
+
+        <!-- =========================================
+             LUNCH
+        ========================================== -->
 
         <div class="meal-card">
 
-            <h2>Lunch</h2>
+            <h2>
+                Lunch
+            </h2>
 
-            <h3 id="lunchMeal">
-                Lunch meal ideas will appear here.
-            </h3>
+
+            <!-- Empty until a meal is generated -->
+
+            <h3 id="lunchMeal"></h3>
 
 
             <div class="meal-buttons">
@@ -96,6 +109,7 @@
                 >
                     View Lunch Recipe
                 </button>
+
 
                 <button
                     id="newLunchButton"
@@ -118,15 +132,21 @@
         </div>
 
 
-        <!-- DINNER -->
+
+        <!-- =========================================
+             DINNER
+        ========================================== -->
 
         <div class="meal-card">
 
-            <h2>Dinner</h2>
+            <h2>
+                Dinner
+            </h2>
 
-            <h3 id="dinnerMeal">
-                Dinner meal ideas will appear here.
-            </h3>
+
+            <!-- Empty until a meal is generated -->
+
+            <h3 id="dinnerMeal"></h3>
 
 
             <div class="meal-buttons">
@@ -138,6 +158,7 @@
                 >
                     View Dinner Recipe
                 </button>
+
 
                 <button
                     id="newDinnerButton"
@@ -160,7 +181,10 @@
         </div>
 
 
-        <!-- GROCERY LIST -->
+
+        <!-- =========================================
+             GROCERY LIST
+        ========================================== -->
 
         <div
             id="grocerySection"
@@ -168,21 +192,29 @@
             style="display: none;"
         >
 
-            <h2>Combined Grocery List</h2>
+            <h2>
+                Combined Grocery List
+            </h2>
+
 
             <p>
                 Ingredients needed for your lunch and dinner meal prep.
             </p>
 
+
             <div id="groceryList"></div>
 
         </div>
 
+
     </div>
 
 
-    <!-- Your JavaScript -->
+
+    <!-- JavaScript -->
+
     <script src="script.js"></script>
+
 
 </body>
 

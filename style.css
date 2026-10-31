@@ -10,6 +10,7 @@ body {
     padding: 0;
 }
 
+/* Main page container */
 .container {
     max-width: 900px;
     margin: 40px auto;
@@ -66,7 +67,7 @@ label {
     font-size: 18px;
 }
 
-/* Servings input box */
+/* Servings input */
 input {
     width: 120px;
     padding: 10px;
@@ -81,16 +82,33 @@ input {
 /* Lunch and Dinner sections */
 .meal-card {
     background-color: transparent;
-    padding: 22px 0;
-    margin-top: 30px;
+    padding: 18px 0;
+    margin-top: 20px;
     border: none;
     border-radius: 0;
     box-shadow: none;
+    text-align: center;
+}
+
+/* Meal title */
+.meal-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Meal name */
+.meal-card h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Meal info text */
+.meal-card p {
+    text-align: center;
 }
 
 /* Main buttons */
 button {
-    margin-top: 30px;
     padding: 14px 24px;
     font-size: 18px;
     font-weight: bold;
@@ -108,22 +126,23 @@ button:hover {
 
 /* Recipe buttons */
 .recipe-button {
-    margin-top: 15px;
-    margin-right: 10px;
     padding: 10px 18px;
     font-size: 16px;
 }
 
-/* Buttons inside meal sections */
+/* Buttons inside each meal section */
 .meal-buttons {
     display: flex;
+    justify-content: center;
     gap: 12px;
     flex-wrap: wrap;
     margin-top: 15px;
 }
 
-.meal-buttons button {
-    margin-top: 0;
+/* Main Generate button */
+#generateButton {
+    display: block;
+    margin: 35px auto 0 auto;
 }
 
 /* Recipe details */
@@ -134,12 +153,16 @@ button:hover {
     border-top: 1px solid #DE3163;
     color: #0B1F3A;
     box-shadow: none;
+    text-align: left;
 }
 
+/* Recipe headings */
 .recipe-details h3 {
     color: #DE3163;
+    text-align: center;
 }
 
+/* Recipe list items */
 .recipe-details li {
     margin-bottom: 10px;
     line-height: 1.5;
@@ -155,16 +178,28 @@ button:hover {
     box-shadow: none;
 }
 
+/* Grocery heading */
 .grocery-section h2 {
     margin-top: 0;
+    text-align: center;
 }
 
+/* Grocery description */
+.grocery-section p {
+    text-align: center;
+}
+
+/* Grocery list */
+.grocery-section ul {
+    padding-left: 0;
+    max-width: 600px;
+    margin: 20px auto 0 auto;
+}
+
+/* Grocery list items */
 .grocery-section li {
     list-style: none;
     margin-bottom: 12px;
     font-size: 18px;
-}
-
-.grocery-section ul {
-    padding-left: 0;
+    text-align: left;
 }

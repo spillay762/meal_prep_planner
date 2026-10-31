@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>My Weekly Meal Prep Planner</title>
@@ -21,6 +22,8 @@
         </p>
 
 
+        <!-- SERVINGS -->
+
         <div class="servings-section">
 
             <label for="servings">
@@ -38,6 +41,8 @@
         </div>
 
 
+        <!-- LUNCH -->
+
         <div class="meal-card">
 
             <h2>Lunch</h2>
@@ -50,13 +55,27 @@
                 Click "Generate My Meals" to choose a lunch.
             </p>
 
-            <button
-                id="lunchRecipeButton"
-                class="recipe-button"
-                style="display: none;"
-            >
-                View Lunch Recipe
-            </button>
+
+            <div class="meal-buttons">
+
+                <button
+                    id="lunchRecipeButton"
+                    class="recipe-button"
+                    style="display: none;"
+                >
+                    View Lunch Recipe
+                </button>
+
+                <button
+                    id="newLunchButton"
+                    class="recipe-button"
+                    style="display: none;"
+                >
+                    New Lunch
+                </button>
+
+            </div>
+
 
             <div
                 id="lunchRecipe"
@@ -67,6 +86,8 @@
 
         </div>
 
+
+        <!-- DINNER -->
 
         <div class="meal-card">
 
@@ -80,13 +101,27 @@
                 Click "Generate My Meals" to choose a dinner.
             </p>
 
-            <button
-                id="dinnerRecipeButton"
-                class="recipe-button"
-                style="display: none;"
-            >
-                View Dinner Recipe
-            </button>
+
+            <div class="meal-buttons">
+
+                <button
+                    id="dinnerRecipeButton"
+                    class="recipe-button"
+                    style="display: none;"
+                >
+                    View Dinner Recipe
+                </button>
+
+                <button
+                    id="newDinnerButton"
+                    class="recipe-button"
+                    style="display: none;"
+                >
+                    New Dinner
+                </button>
+
+            </div>
+
 
             <div
                 id="dinnerRecipe"
@@ -98,10 +133,14 @@
         </div>
 
 
+        <!-- GENERATE BOTH -->
+
         <button id="generateButton">
             Generate My Meals
         </button>
 
+
+        <!-- COMBINED GROCERY LIST -->
 
         <div
             id="grocerySection"
@@ -112,7 +151,7 @@
             <h2>Combined Grocery List</h2>
 
             <p>
-                Ingredients needed for both meals.
+                Ingredients needed for your lunch and dinner meal prep.
             </p>
 
             <div id="groceryList"></div>

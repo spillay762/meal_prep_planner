@@ -1,5 +1,4 @@
 const lunchMeals = [
-
     {
         name: "Soy Garlic Chicken Stir-Fry",
         baseServings: 4,
@@ -17,14 +16,13 @@ const lunchMeals = [
         instructions: [
             "Cook the rice according to the package instructions.",
             "Cut the chicken into bite-sized pieces.",
-            "Heat a large pan and cook the chicken until browned and fully cooked.",
-            "Add the bell peppers and broccoli and cook until slightly tender.",
+            "Cook the chicken in a large pan until fully cooked.",
+            "Add the bell peppers and broccoli.",
             "Add garlic, soy sauce and sesame oil.",
-            "Stir everything together and cook for another 2 to 3 minutes.",
-            "Divide the rice and chicken stir-fry evenly between your meal prep containers."
+            "Cook everything together for another 2 to 3 minutes.",
+            "Divide evenly between meal prep containers."
         ]
     },
-
 
     {
         name: "Chicken Pesto Pasta",
@@ -40,17 +38,16 @@ const lunchMeals = [
         ],
 
         instructions: [
-            "Cook the pasta according to the package instructions.",
+            "Cook the pasta.",
             "Cut the chicken into small pieces.",
-            "Cook the chicken in a large pan until fully cooked.",
-            "Add the spinach and tomatoes and cook for 2 to 3 minutes.",
+            "Cook the chicken until fully cooked.",
+            "Add spinach and tomatoes.",
             "Add the cooked pasta and pesto.",
             "Mix everything together.",
-            "Top with Parmesan cheese.",
+            "Top with Parmesan.",
             "Divide evenly between meal prep containers."
         ]
     },
-
 
     {
         name: "Chicken Burrito Bowl",
@@ -68,22 +65,19 @@ const lunchMeals = [
 
         instructions: [
             "Cook the rice.",
-            "Season and cook the chicken until fully cooked.",
+            "Season and cook the chicken.",
             "Slice the chicken.",
             "Drain and rinse the black beans.",
-            "Prepare the corn and bell peppers.",
+            "Prepare the corn and peppers.",
             "Divide rice between containers.",
             "Add chicken, beans, corn and peppers.",
             "Top with salsa and cheese."
         ]
     }
-
 ];
 
 
-
 const dinnerMeals = [
-
     {
         name: "Kerala Beef Curry",
         baseServings: 4,
@@ -103,15 +97,14 @@ const dinnerMeals = [
             "Cut the beef into bite-sized pieces.",
             "Slice the onions and tomatoes.",
             "Cook the onions until golden.",
-            "Add ginger and garlic and cook for 1 minute.",
+            "Add ginger and garlic.",
             "Add tomatoes and spices.",
             "Add the beef and mix well.",
-            "Add coconut milk and a little water if needed.",
+            "Add coconut milk.",
             "Simmer until the beef is tender.",
             "Serve with rice, roti or naan."
         ]
     },
-
 
     {
         name: "Korean Beef Bowl",
@@ -129,8 +122,8 @@ const dinnerMeals = [
 
         instructions: [
             "Cook the rice.",
-            "Brown the ground beef in a large pan.",
-            "Add garlic and cook for about 1 minute.",
+            "Brown the ground beef.",
+            "Add garlic.",
             "Add soy sauce and sesame oil.",
             "Cook until the beef absorbs the sauce.",
             "Prepare the carrots and green onions.",
@@ -138,7 +131,6 @@ const dinnerMeals = [
             "Top with beef, carrots and green onions."
         ]
     },
-
 
     {
         name: "Beef Keema",
@@ -155,86 +147,69 @@ const dinnerMeals = [
         ],
 
         instructions: [
-            "Cook the onions until soft and golden.",
+            "Cook the onions until golden.",
             "Add ginger and garlic.",
-            "Add ground beef and cook until browned.",
+            "Add ground beef and brown it.",
             "Add tomatoes and spices.",
-            "Cook until the tomatoes break down.",
+            "Cook until the tomatoes soften.",
             "Add peas.",
-            "Simmer for approximately 10 minutes.",
+            "Simmer for about 10 minutes.",
             "Serve with rice, naan or roti."
         ]
     }
-
 ];
 
 
-
-let selectedLunch;
-let selectedDinner;
-
+let selectedLunch = null;
+let selectedDinner = null;
 
 
-const generateButton =
-    document.getElementById("generateButton");
-
+const generateButton = document.getElementById("generateButton");
 
 
 generateButton.addEventListener("click", function () {
 
-    const servings =
-        Number(document.getElementById("servings").value);
-
+    const servings = Number(
+        document.getElementById("servings").value
+    );
 
     selectedLunch =
         lunchMeals[Math.floor(Math.random() * lunchMeals.length)];
-
 
     selectedDinner =
         dinnerMeals[Math.floor(Math.random() * dinnerMeals.length)];
 
 
-
     document.getElementById("lunchMeal").textContent =
         selectedLunch.name;
-
 
     document.getElementById("dinnerMeal").textContent =
         selectedDinner.name;
 
 
-
     document.getElementById("lunchInfo").textContent =
         servings + " servings";
-
 
     document.getElementById("dinnerInfo").textContent =
         servings + " servings";
 
 
-
     document.getElementById("lunchRecipeButton").style.display =
         "inline-block";
-
 
     document.getElementById("dinnerRecipeButton").style.display =
         "inline-block";
 
 
-
     document.getElementById("lunchRecipe").style.display =
         "none";
-
 
     document.getElementById("dinnerRecipe").style.display =
         "none";
 
 
-
     createGroceryList(servings);
-
 });
-
 
 
 document
@@ -249,9 +224,7 @@ document
             servings,
             "lunchRecipe"
         );
-
     });
-
 
 
 document
@@ -266,9 +239,7 @@ document
             servings,
             "dinnerRecipe"
         );
-
     });
-
 
 
 function showRecipe(recipe, servings, elementId) {
@@ -277,8 +248,9 @@ function showRecipe(recipe, servings, elementId) {
         servings / recipe.baseServings;
 
 
-    let ingredientHTML =
-        "<h3>Ingredients</h3><ul>";
+    let html = "<h3>Ingredients</h3>";
+
+    html += "<ul>";
 
 
     recipe.ingredients.forEach(function (ingredient) {
@@ -286,169 +258,129 @@ function showRecipe(recipe, servings, elementId) {
         let scaledAmount =
             ingredient.amount * scale;
 
-
-        if (scaledAmount % 1 !== 0) {
-            scaledAmount =
-                scaledAmount.toFixed(1);
+        if (!Number.isInteger(scaledAmount)) {
+            scaledAmount = scaledAmount.toFixed(1);
         }
 
-
-        ingredientHTML +=
+        html +=
             "<li>" +
             scaledAmount +
-            " " +
-            ingredient.unit +
+            (ingredient.unit ? " " + ingredient.unit : "") +
             " " +
             ingredient.name +
             "</li>";
-
     });
 
 
-    ingredientHTML += "</ul>";
+    html += "</ul>";
 
 
+    html += "<h3>Instructions</h3>";
 
-    let instructionHTML =
-        "<h3>Instructions</h3><ol>";
+    html += "<ol>";
 
 
     recipe.instructions.forEach(function (step) {
 
-        instructionHTML +=
+        html +=
             "<li>" +
             step +
             "</li>";
-
     });
 
 
-    instructionHTML += "</ol>";
-
+    html += "</ol>";
 
 
     const recipeBox =
         document.getElementById(elementId);
 
-
-    recipeBox.innerHTML =
-        ingredientHTML +
-        instructionHTML;
-
+    recipeBox.innerHTML = html;
 
     recipeBox.style.display = "block";
-
 }
-
 
 
 function createGroceryList(servings) {
 
     const groceryItems = {};
 
-    const allIngredients = [
-        ...selectedLunch.ingredients,
-        ...selectedDinner.ingredients
-    ];
 
+    addIngredientsToGroceryList(
+        selectedLunch,
+        servings,
+        groceryItems
+    );
 
-
-    allIngredients.forEach(function (ingredient) {
-
-        let scale;
-
-
-        if (
-            selectedLunch.ingredients.includes(ingredient)
-        ) {
-
-            scale =
-                servings / selectedLunch.baseServings;
-
-        }
-
-        else {
-
-            scale =
-                servings / selectedDinner.baseServings;
-
-        }
-
-
-
-        const key =
-            ingredient.name +
-            "-" +
-            ingredient.unit;
-
-
-
-        if (!groceryItems[key]) {
-
-            groceryItems[key] = {
-
-                name: ingredient.name,
-
-                amount: 0,
-
-                unit: ingredient.unit
-
-            };
-
-        }
-
-
-
-        groceryItems[key].amount +=
-            ingredient.amount * scale;
-
-    });
-
+    addIngredientsToGroceryList(
+        selectedDinner,
+        servings,
+        groceryItems
+    );
 
 
     let groceryHTML = "<ul>";
 
 
-    Object.values(groceryItems)
-        .forEach(function (item) {
+    Object.values(groceryItems).forEach(function (item) {
 
-            let amount = item.amount;
+        let amount = item.amount;
 
+        if (!Number.isInteger(amount)) {
+            amount = amount.toFixed(1);
+        }
 
-            if (amount % 1 !== 0) {
-
-                amount =
-                    amount.toFixed(1);
-
-            }
-
-
-            groceryHTML +=
-
-                "<li>" +
-
-                "<input type='checkbox'> " +
-
-                amount +
-                " " +
-                item.unit +
-                " " +
-                item.name +
-
-                "</li>";
-
-        });
+        groceryHTML +=
+            "<li>" +
+            "<input type='checkbox'> " +
+            amount +
+            (item.unit ? " " + item.unit : "") +
+            " " +
+            item.name +
+            "</li>";
+    });
 
 
     groceryHTML += "</ul>";
 
 
-
     document.getElementById("groceryList").innerHTML =
         groceryHTML;
 
-
     document.getElementById("grocerySection").style.display =
         "block";
+}
 
+
+function addIngredientsToGroceryList(
+    recipe,
+    servings,
+    groceryItems
+) {
+
+    const scale =
+        servings / recipe.baseServings;
+
+
+    recipe.ingredients.forEach(function (ingredient) {
+
+        const key =
+            ingredient.name.toLowerCase() +
+            "-" +
+            ingredient.unit;
+
+
+        if (!groceryItems[key]) {
+
+            groceryItems[key] = {
+                name: ingredient.name,
+                amount: 0,
+                unit: ingredient.unit
+            };
+        }
+
+
+        groceryItems[key].amount +=
+            ingredient.amount * scale;
+    });
 }

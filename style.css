@@ -22,9 +22,17 @@ body {
 .container {
     width: 90%;
     max-width: 1000px;
+
     margin: 40px auto;
-    padding: 40px 20px;
+
+    padding: 50px 30px;
+
     background-color: #FFFFE0;
+
+    border: 2px solid #DE3163;
+    border-radius: 18px;
+
+    box-sizing: border-box;
 }
 
 
@@ -35,13 +43,16 @@ body {
 .brand-header {
     display: flex;
     flex-direction: column;
+
     align-items: center;
     justify-content: center;
 
     margin-bottom: 10px;
 }
 
-/* Smaller logo */
+
+/* Logo */
+
 .brand-logo {
     width: 85px;
     height: auto;
@@ -102,7 +113,7 @@ h1 {
 }
 
 
-/* Label */
+/* Labels */
 
 label {
     font-weight: bold;
@@ -316,7 +327,7 @@ button:hover {
 }
 
 
-/* Cooking instructions list */
+/* Cooking instructions */
 
 .recipe-details ol {
     display: table;
@@ -333,7 +344,7 @@ button:hover {
 }
 
 
-/* List items */
+/* Recipe list items */
 
 .recipe-details li {
     color: #0B1F3A;
@@ -399,7 +410,7 @@ button:hover {
 }
 
 
-/* Center grocery list */
+/* Grocery list */
 
 .grocery-section ul {
     width: fit-content;
@@ -441,17 +452,14 @@ button:hover {
 
 .grocery-section input[type="checkbox"] {
     appearance: none;
-
     -webkit-appearance: none;
 
     width: 22px;
-
     height: 22px;
 
     min-width: 22px;
 
     padding: 0;
-
     margin: 0;
 
     border: 2px solid #DE3163;
@@ -499,7 +507,11 @@ button:hover {
     .container {
         width: 92%;
 
-        padding: 25px 10px;
+        padding: 30px 15px;
+
+        margin: 20px auto;
+
+        border-radius: 14px;
     }
 
     .brand-logo {

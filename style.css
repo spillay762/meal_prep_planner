@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFE0;
+    color: #0B1F3A;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+}
+
+/* Main title */
+h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    color: #DE3163;
+}
+
+/* Section headings */
+h2 {
+    color: #DE3163;
+}
+
+.subtitle {
+    color: #0B1F3A;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #0B1F3A;
+}
+
+/* Servings box */
+input {
+    width: 120px;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #DE3163;
+    border-radius: 8px;
+    color: #0B1F3A;
+    background-color: white;
+}
+
+/* Lunch and Dinner cards */
+.meal-card {
+    background-color: white;
+    padding: 22px;
+    margin-top: 20px;
+    border-radius: 12px;
+    border: 1px solid #DE3163;
+}
+
+/* Buttons */
+button {
+    margin-top: 30px;
+    padding: 14px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    background-color: #DE3163;
+    color: white;
+    cursor: pointer;
+}
+
+/* Slight effect when hovering over button */
+button:hover {
+    opacity: 0.85;
+}

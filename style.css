@@ -7,6 +7,10 @@ body {
     background-color: #FFFFE0;
 }
 
+/* Smooth scrolling for the whole website */
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: "Poppins", sans-serif;
     color: #5C3A21;
@@ -208,6 +212,8 @@ button:hover {
     box-shadow: none;
 
     text-align: center;
+
+    scroll-margin-top: 40px;
 }
 
 .meal-card h2 {

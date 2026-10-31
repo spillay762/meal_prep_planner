@@ -1729,9 +1729,6 @@ function updateLunch(servings) {
     document.getElementById("lunchMeal").textContent =
         selectedLunch.name;
 
-    document.getElementById("lunchInfo").textContent =
-        servings + " servings";
-
     document.getElementById("lunchRecipe").style.display =
         "none";
 
@@ -1749,16 +1746,12 @@ function updateDinner(servings) {
     document.getElementById("dinnerMeal").textContent =
         selectedDinner.name;
 
-    document.getElementById("dinnerInfo").textContent =
-        servings + " servings";
-
     document.getElementById("dinnerRecipe").style.display =
         "none";
 
     document.getElementById("dinnerRecipeButton").textContent =
         "View Dinner Recipe";
 }
-
 
 // =====================================================
 // SHOW BUTTONS

@@ -1564,6 +1564,30 @@ const dinnerMeals = [
             "Temper mustard seeds, curry leaves and dried chilies.",
             "Pour the tempering over the sambar."
         ]
+    },
+    
+     {
+        name: "Kerala Moru curry",
+        baseServings: 4,
+
+    ingredients: [
+        { name: "Plain yogurt", amount: 3, unit: "cups" },
+        { name: "Grated coconut", amount: 0.75, unit: "cup" },
+        { name: "Cumin", amount: 1, unit: "tsp" },
+        { name: "Green chilies", amount: 2, unit: "" },
+        { name: "Turmeric", amount: 0.5, unit: "tsp" },
+        { name: "Mustard seeds", amount: null, unit: "" },
+        { name: "Curry leaves", amount: null, unit: "" },
+        { name: "Fenugreek", amount: null, unit: "" },
+        { name: "Dried chili", amount: null, unit: "" },
+        { name: "Coconut oil", amount: null, unit: "" }
+        ],
+
+        instructions: [
+        "Blend yogurt with grated coconut, turmeric, cumin and green chili.",
+        "Heat gently without boiling.",
+        "Finish with mustard seeds, curry leaves, fenugreek and dried chili tempered in coconut oil."
+        ]
     }
 
 ];

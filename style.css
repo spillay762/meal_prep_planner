@@ -24,12 +24,18 @@ h2 {
     color: #DE3163;
 }
 
+h3 {
+    color: #0B1F3A;
+    font-size: 24px;
+}
+
 .subtitle {
     color: #0B1F3A;
     font-size: 18px;
     margin-bottom: 35px;
 }
 
+/* Labels */
 label {
     font-weight: bold;
     display: block;
@@ -48,16 +54,16 @@ input {
     background-color: white;
 }
 
-/* Lunch and Dinner cards */
+/* Lunch and Dinner sections */
 .meal-card {
-    background-color: white;
-    padding: 22px;
-    margin-top: 20px;
-    border-radius: 12px;
-    border: 1px solid #DE3163;
+    background-color: #FFFFE0;
+    padding: 22px 0;
+    margin-top: 30px;
+    border: none;
+    border-radius: 0;
 }
 
-/* Buttons */
+/* Main buttons */
 button {
     margin-top: 30px;
     padding: 14px 24px;
@@ -70,15 +76,12 @@ button {
     cursor: pointer;
 }
 
-/* Slight effect when hovering over button */
+/* Hover effect */
 button:hover {
     opacity: 0.85;
 }
-h3 {
-    color: #0B1F3A;
-    font-size: 24px;
-}
 
+/* Recipe buttons */
 .recipe-button {
     margin-top: 15px;
     margin-right: 10px;
@@ -86,6 +89,19 @@ h3 {
     font-size: 16px;
 }
 
+/* Buttons inside each meal section */
+.meal-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.meal-buttons button {
+    margin-top: 0;
+}
+
+/* Recipe details */
 .recipe-details {
     margin-top: 25px;
     padding-top: 20px;
@@ -102,12 +118,13 @@ h3 {
     line-height: 1.5;
 }
 
+/* Grocery section */
 .grocery-section {
-    background-color: white;
+    background-color: #FFFFE0;
     margin-top: 35px;
-    padding: 30px;
-    border: 1px solid #DE3163;
-    border-radius: 12px;
+    padding: 30px 0;
+    border: none;
+    border-radius: 0;
 }
 
 .grocery-section h2 {
@@ -122,14 +139,4 @@ h3 {
 
 .grocery-section ul {
     padding-left: 0;
-}
-.meal-buttons {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-    margin-top: 15px;
-}
-
-.meal-buttons button {
-    margin-top: 0;
 }

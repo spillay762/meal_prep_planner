@@ -213,15 +213,25 @@ button:hover {
 
 
 /* Lunch / Dinner headings */
-
 .meal-card h2 {
-    color: #DE3163;
+    display: block;
+
+    width: fit-content;
+    min-width: 220px;
+
+    margin: 0 auto 25px auto;
+
+    background-color: #DE3163;
+    color: white;
+
+    padding: 12px 40px;
 
     font-size: 30px;
+    font-weight: bold;
 
     text-align: center;
 
-    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 

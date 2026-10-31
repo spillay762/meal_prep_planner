@@ -207,7 +207,6 @@ button:hover {
 
 .recipe-button {
     padding: 11px 20px;
-
     font-size: 16px;
 }
 
@@ -234,7 +233,7 @@ button:hover {
 }
 
 
-/* Ingredients / Instructions headings */
+/* Ingredients / Cooking Instructions headings */
 
 .recipe-details h3 {
     color: #DE3163;
@@ -248,10 +247,9 @@ button:hover {
 }
 
 
-/* Center ingredient and instruction lists as blocks */
+/* Ingredients list */
 
-.recipe-details ul,
-.recipe-details ol {
+.recipe-details ul {
     width: fit-content;
 
     max-width: 650px;
@@ -259,10 +257,29 @@ button:hover {
     margin: 0 auto 30px auto;
 
     padding-left: 35px;
+
+    text-align: left;
 }
 
 
-/* Keep list text left aligned */
+/* Cooking instructions list */
+
+.recipe-details ol {
+    display: table;
+
+    width: fit-content;
+
+    max-width: 650px;
+
+    margin: 0 auto 30px auto;
+
+    padding-left: 35px;
+
+    text-align: left;
+}
+
+
+/* List items */
 
 .recipe-details li {
     color: #0B1F3A;
@@ -444,6 +461,7 @@ button:hover {
     .recipe-details ul,
     .recipe-details ol {
         width: auto;
+        display: block;
         padding-left: 28px;
     }
 

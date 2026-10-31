@@ -18,6 +18,8 @@ const generateButton = document.getElementById("generateButton");
 
 generateButton.addEventListener("click", function () {
 
+    const servings = document.getElementById("servings").value;
+
     const randomLunch =
         lunchMeals[Math.floor(Math.random() * lunchMeals.length)];
 
@@ -28,4 +30,9 @@ generateButton.addEventListener("click", function () {
 
     document.getElementById("dinnerMeal").textContent = randomDinner;
 
+    document.getElementById("lunchInfo").textContent =
+        servings + " servings";
+
+    document.getElementById("dinnerInfo").textContent =
+        servings + " servings";
 });

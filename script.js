@@ -1912,7 +1912,7 @@ function showRecipe(
 
                 html +=
                     ingredient.name +
-                    " — as needed";
+                    " - as needed";
 
             } else {
 
@@ -2040,7 +2040,7 @@ function createGroceryList(servings) {
 
                 groceryHTML +=
                     item.name +
-                    " — as needed";
+                    " - as needed";
 
             } else {
 

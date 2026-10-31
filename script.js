@@ -1588,7 +1588,97 @@ const dinnerMeals = [
         "Heat gently without boiling.",
         "Finish with mustard seeds, curry leaves, fenugreek and dried chili tempered in coconut oil."
         ]
-    }
+    },
+    {
+    name: "Chicken Perattu",
+    baseServings: 4,
+
+    ingredients: [
+        { name: "Chicken", amount: 800, unit: "g" },
+        { name: "Onions", amount: 3, unit: "" },
+        { name: "Tomato", amount: 1, unit: "" },
+        { name: "Ginger", amount: 1, unit: "tbsp" },
+        { name: "Garlic cloves", amount: 5, unit: "" },
+        { name: "Green chilies", amount: 2, unit: "" },
+        { name: "Curry leaves", amount: 2, unit: "sprigs" },
+        { name: "Chili powder", amount: 1, unit: "tsp" },
+        { name: "Coriander powder", amount: 1, unit: "tbsp" },
+        { name: "Turmeric", amount: 0.5, unit: "tsp" },
+        { name: "Black pepper", amount: 1.5, unit: "tsp" },
+        { name: "Garam masala", amount: 1, unit: "tsp" },
+        { name: "Coconut oil", amount: 2, unit: "tbsp" },
+        { name: "Salt", amount: null, unit: "" }
+    ],
+
+    instructions: [
+        "Marinate chicken with turmeric, chili powder, coriander powder, black pepper and salt.",
+        "Cook the chicken with a little water until nearly tender.",
+        "In a separate pan, sauté onions, ginger, garlic, green chilies and curry leaves in coconut oil until deeply golden.",
+        "Add tomato and garam masala.",
+        "Add the cooked chicken.",
+        "Roast uncovered over medium heat until the masala becomes dark, thick and coats the chicken well.",
+        "Finish with extra black pepper and curry leaves."
+    ]
+},
+
+{
+    name: "Kerala Prawn Mango Curry",
+    baseServings: 4,
+
+    ingredients: [
+        { name: "Shrimp", amount: 700, unit: "g" },
+        { name: "Raw green mango", amount: 1, unit: "" },
+        { name: "Grated coconut", amount: 1, unit: "cup" },
+        { name: "Green chilies", amount: 2, unit: "" },
+        { name: "Turmeric", amount: 0.5, unit: "tsp" },
+        { name: "Chili powder", amount: 1, unit: "tsp" },
+        { name: "Cumin seeds", amount: 0.5, unit: "tsp" },
+        { name: "Water", amount: 1.25, unit: "cups" },
+        { name: "Mustard seeds", amount: 1, unit: "tsp" },
+        { name: "Dried red chilies", amount: 2, unit: "" },
+        { name: "Curry leaves", amount: 2, unit: "sprigs" },
+        { name: "Coconut oil", amount: 1, unit: "tbsp" },
+        { name: "Salt", amount: null, unit: "" }
+    ],
+
+    instructions: [
+        "Cook raw mango pieces with turmeric, chili powder, green chilies and a little water until slightly tender.",
+        "Add shrimp and cook briefly.",
+        "Grind grated coconut with cumin seeds and a little water into a smooth paste.",
+        "Stir the coconut paste into the curry.",
+        "Simmer gently until the shrimp are cooked and the curry is creamy and tangy.",
+        "Finish with a tempering of mustard seeds, curry leaves and dried red chilies in coconut oil."
+    ]
+},
+
+{
+    name: "Kerala Prawns Fry",
+    baseServings: 4,
+
+    ingredients: [
+        { name: "Shrimp", amount: 700, unit: "g" },
+        { name: "Onions", amount: 2, unit: "" },
+        { name: "Ginger", amount: 1, unit: "tbsp" },
+        { name: "Garlic cloves", amount: 4, unit: "" },
+        { name: "Green chili", amount: 1, unit: "" },
+        { name: "Curry leaves", amount: 2, unit: "sprigs" },
+        { name: "Chili powder", amount: 1, unit: "tsp" },
+        { name: "Turmeric", amount: 0.5, unit: "tsp" },
+        { name: "Black pepper", amount: 1.5, unit: "tsp" },
+        { name: "Coconut oil", amount: 2, unit: "tbsp" },
+        { name: "Lemon", amount: 0.5, unit: "" },
+        { name: "Salt", amount: null, unit: "" }
+    ],
+
+    instructions: [
+        "Marinate shrimp with chili powder, turmeric, black pepper, ginger, garlic and salt.",
+        "Heat coconut oil and cook the shrimp until lightly browned, then remove.",
+        "In the same pan, sauté sliced onions, curry leaves and green chili until golden.",
+        "Return the shrimp to the pan.",
+        "Fry together over medium-high heat until slightly crisp around the edges and well coated in the spicy onion masala.",
+        "Finish with black pepper and a squeeze of lemon."
+    ]
+}
 
 ];
 

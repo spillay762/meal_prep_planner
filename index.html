@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>My Weekly Meal Prep Planner</title>
@@ -22,8 +21,6 @@
         </p>
 
 
-        <!-- SERVINGS -->
-
         <div class="servings-section">
 
             <label for="servings">
@@ -41,8 +38,6 @@
         </div>
 
 
-        <!-- LUNCH -->
-
         <div class="meal-card">
 
             <h2>Lunch</h2>
@@ -56,24 +51,22 @@
             </p>
 
             <button
-                class="recipe-button"
                 id="lunchRecipeButton"
-                style="display:none;"
+                class="recipe-button"
+                style="display: none;"
             >
                 View Lunch Recipe
             </button>
 
             <div
-                class="recipe-details"
                 id="lunchRecipe"
-                style="display:none;"
+                class="recipe-details"
+                style="display: none;"
             >
             </div>
 
         </div>
 
-
-        <!-- DINNER -->
 
         <div class="meal-card">
 
@@ -88,50 +81,46 @@
             </p>
 
             <button
-                class="recipe-button"
                 id="dinnerRecipeButton"
-                style="display:none;"
+                class="recipe-button"
+                style="display: none;"
             >
                 View Dinner Recipe
             </button>
 
             <div
-                class="recipe-details"
                 id="dinnerRecipe"
-                style="display:none;"
+                class="recipe-details"
+                style="display: none;"
             >
             </div>
 
         </div>
 
 
-        <!-- GENERATE BUTTON -->
-
         <button id="generateButton">
             Generate My Meals
         </button>
 
 
-        <!-- COMBINED GROCERY LIST -->
-
         <div
-            class="grocery-section"
             id="grocerySection"
-            style="display:none;"
+            class="grocery-section"
+            style="display: none;"
         >
 
             <h2>Combined Grocery List</h2>
 
             <p>
-                Ingredients needed for both your lunch and dinner meal prep.
+                Ingredients needed for both meals.
             </p>
 
             <div id="groceryList"></div>
 
         </div>
 
-
     </div>
+
 
     <script src="script.js"></script>
 

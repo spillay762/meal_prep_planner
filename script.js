@@ -1730,6 +1730,12 @@ generateButton.addEventListener("click", function () {
     showMealButtons();
 
     createGroceryList(servings);
+
+    // Smoothly scroll to the Lunch section
+    document.querySelector(".meal-card").scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
 });
 
 

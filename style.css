@@ -1,302 +1,42 @@
 /* =========================================
-   PAGE
-========================================= */
-
-html,
-body {
-    background-color: #FFFFE0;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    color: #0B1F3A;
-    margin: 0;
-    padding: 0;
-}
-
-
-/* =========================================
-   MAIN CONTAINER
-========================================= */
-
-.container {
-    width: 90%;
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 40px 20px;
-    background-color: #FFFFE0;
-}
-
-
-/* =========================================
-   MAIN TITLE
-========================================= */
-
-h1 {
-    font-family: "Dancing Script", cursive;
-    font-size: 64px;
-    font-weight: 700;
-
-    text-align: center;
-
-    margin-top: 0;
-    margin-bottom: 10px;
-
-    color: #DE3163;
-}
-
-
-/* =========================================
-   SUBTITLE
-========================================= */
-
-.subtitle {
-    color: #0B1F3A;
-
-    font-size: 20px;
-
-    text-align: center;
-
-    margin-bottom: 45px;
-}
-
-
-/* =========================================
-   SERVINGS SECTION
-========================================= */
-
-.servings-section {
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-
-    text-align: center;
-
-    margin-bottom: 45px;
-}
-
-
-/* Label */
-
-label {
-    font-weight: bold;
-
-    display: block;
-
-    margin-bottom: 10px;
-
-    color: #0B1F3A;
-
-    font-size: 18px;
-}
-
-
-/* Servings number box */
-
-#servings {
-    width: 120px;
-
-    padding: 12px;
-
-    font-size: 20px;
-
-    text-align: center;
-
-    border: 2px solid #DE3163;
-
-    border-radius: 10px;
-
-    color: #0B1F3A;
-
-    background-color: white;
-}
-
-
-/* =========================================
-   BUTTONS
-========================================= */
-
-button {
-    padding: 14px 24px;
-
-    font-size: 18px;
-
-    font-weight: bold;
-
-    border: none;
-
-    border-radius: 10px;
-
-    background-color: #DE3163;
-
-    color: white;
-
-    cursor: pointer;
-
-    transition: 0.2s ease;
-}
-
-
-button:hover {
-    opacity: 0.82;
-
-    transform: translateY(-1px);
-}
-
-
-/* Generate button */
-
-#generateButton {
-    margin-top: 22px;
-
-    padding: 16px 30px;
-}
-
-
-/* =========================================
-   LUNCH & DINNER SECTIONS
-========================================= */
-
-.meal-card {
-    background-color: transparent;
-
-    padding: 25px 0;
-
-    margin: 25px auto;
-
-    border: none;
-
-    box-shadow: none;
-
-    text-align: center;
-}
-
-
-/* Lunch / Dinner heading */
-
-.meal-card h2 {
-    color: #DE3163;
-
-    font-size: 30px;
-
-    text-align: center;
-
-    margin-bottom: 20px;
-}
-
-
-/* Meal name */
-
-.meal-card h3 {
-    color: #0B1F3A;
-
-    font-size: 26px;
-
-    text-align: center;
-
-    margin-bottom: 15px;
-}
-
-
-/* Serving text */
-
-.meal-card p {
-    color: #0B1F3A;
-
-    text-align: center;
-
-    font-size: 18px;
-}
-
-
-/* =========================================
-   MEAL BUTTONS
-========================================= */
-
-.meal-buttons {
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    gap: 12px;
-
-    flex-wrap: wrap;
-
-    margin-top: 20px;
-}
-
-
-.recipe-button {
-    padding: 11px 20px;
-
-    font-size: 16px;
-}
-
-
-/* =========================================
    RECIPE DETAILS
 ========================================= */
 
 .recipe-details {
     background-color: transparent;
-
     width: 100%;
-
-    max-width: 700px;
-
+    max-width: 760px;
     margin: 30px auto 0 auto;
-
     padding-top: 25px;
-
     border-top: 1px solid #DE3163;
-
     color: #0B1F3A;
 }
 
-
 /* Ingredients / Cooking Instructions headings */
-
 .recipe-details h3 {
     color: #DE3163;
-
     text-align: center;
-
     font-size: 28px;
-
     margin-top: 25px;
-
     margin-bottom: 25px;
 }
 
-
-/* Center the list container */
-
+/* Center the ingredient/instruction list as a block */
 .recipe-details ul,
 .recipe-details ol {
-    max-width: 620px;
-
+    width: fit-content;
+    max-width: 650px;
     margin: 0 auto 30px auto;
-
     padding-left: 35px;
 }
 
-
-/* Keep actual list text readable */
-
+/* Keep the text itself left aligned */
 .recipe-details li {
     color: #0B1F3A;
-
     text-align: left;
-
     margin-bottom: 14px;
-
-    padding-left: 4px;
-
+    padding-left: 6px;
     font-size: 18px;
-
     line-height: 1.6;
 }
 
@@ -307,169 +47,51 @@ button:hover {
 
 .grocery-section {
     background-color: transparent;
-
     width: 100%;
-
-    max-width: 750px;
-
-    margin: 45px auto 0 auto;
-
+    max-width: 760px;
+    margin: 50px auto 0 auto;
     padding: 30px 0;
-
     border: none;
-
     box-shadow: none;
 }
 
-
+/* Grocery heading */
 .grocery-section h2 {
     color: #DE3163;
-
     text-align: center;
-
     font-size: 30px;
-
     margin-top: 0;
-
     margin-bottom: 12px;
 }
 
-
+/* Grocery description */
 .grocery-section p {
     text-align: center;
-
     color: #0B1F3A;
-
     font-size: 18px;
-
     margin-bottom: 30px;
 }
 
-
-/* Grocery list */
-
+/* Center grocery list itself */
 .grocery-section ul {
-    max-width: 600px;
-
+    width: fit-content;
+    max-width: 650px;
     margin: 0 auto;
-
     padding: 0;
 }
 
-
+/* Grocery list rows */
 .grocery-section li {
     list-style: none;
-
     display: flex;
-
     align-items: center;
-
     gap: 14px;
 
     margin-bottom: 15px;
 
     color: #0B1F3A;
-
     font-size: 18px;
-
     line-height: 1.4;
-}
 
-
-/* =========================================
-   ROUND GROCERY CHECKBOXES
-========================================= */
-
-.grocery-section input[type="checkbox"] {
-    appearance: none;
-    -webkit-appearance: none;
-
-    width: 22px;
-    height: 22px;
-
-    min-width: 22px;
-
-    padding: 0;
-
-    margin: 0;
-
-    border: 2px solid #DE3163;
-
-    border-radius: 50%;
-
-    background-color: transparent;
-
-    cursor: pointer;
-
-    display: grid;
-
-    place-content: center;
-}
-
-
-/* Checked circle */
-
-.grocery-section input[type="checkbox"]:checked {
-    background-color: #DE3163;
-}
-
-
-/* White check mark */
-
-.grocery-section input[type="checkbox"]:checked::after {
-    content: "✓";
-
-    color: white;
-
-    font-size: 14px;
-
-    font-weight: bold;
-
-    line-height: 1;
-}
-
-
-/* =========================================
-   RESPONSIVE DESIGN
-========================================= */
-
-@media (max-width: 700px) {
-
-    .container {
-        width: 92%;
-
-        padding: 25px 10px;
-    }
-
-
-    h1 {
-        font-size: 48px;
-    }
-
-
-    .subtitle {
-        font-size: 18px;
-    }
-
-
-    .meal-card h2 {
-        font-size: 26px;
-    }
-
-
-    .meal-card h3 {
-        font-size: 22px;
-    }
-
-
-    .recipe-details ul,
-    .recipe-details ol {
-        padding-left: 28px;
-    }
-
-
-    button {
-        font-size: 16px;
-    }
-
+    text-align: left;
 }
